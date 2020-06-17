@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Fundamentals 3 practice</title>
+  </head>
+  <body>
+    <script>
+      function add7(number) {
+        console.log(number + 7);
+      }
+      add7(15);
+
+      function multiply(a, b) {
+        console.log(a * b);
+      }
+      multiply(12, 12);
+
+      function capitalize(string) {
+        let start = string.charAt(0);
+        if (string.charAt(0).toUpperCase() != start) {
+          console.log(start.toUpperCase() + string.slice(1));
+        } else {
+          console.log(string);
+        }
+      }
+      capitalize("TEST 1");
+      capitalize("test 2");
+      capitalize("tEsT 3");
+
+      function lastLetter(string) {
+        console.log(string.charAt(string.length - 1));
+      }
+      lastLetter("abcd");
+      lastLetter("Last Letter");
+    </script>
+  </body>
+</html>
